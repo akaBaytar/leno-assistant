@@ -9,7 +9,7 @@ const modal = document.querySelector('#video-modal');
 const playButton = document.querySelector('.preview__video-button');
 const videoPlayer = document.querySelector('#video-player');
 
-const date = document.querySelector('#date')
+const date = document.querySelector('#date');
 
 toggleButton.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
@@ -35,4 +35,11 @@ window.addEventListener('click', (e) => {
   }
 });
 
-date.innerText = new Date().getFullYear()
+window.addEventListener('touchstart', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+    videoPlayer.src = '';
+  }
+});
+
+date.innerText = new Date().getFullYear();
