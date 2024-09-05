@@ -13,11 +13,11 @@
 
 ## Live Demo
 
-- You can access the live demo via [Netlify]().
+- You can access the live demo via [Netlify](https://leno-assistant.netlify.app).
 
 ## Screen
 
-[<img src="./public/screen.png" />]()
+[<img src="./public/screen.png" />](https://leno-assistant.netlify.app)
 
 ## Features
 
